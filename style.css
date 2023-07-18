@@ -1,1 +1,95 @@
 /*  Author: Akeem Hertenstein Class: CIS 130, Assignment: Live Bait */
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 10px rgba(104, 104, 104, 0.8);
+    --bord-rad: 5px 5px 5px 5px;
+    --accent:slategrey;
+    --test:greenyellow;
+
+
+}
+html{
+    box-sizing: border-box;
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: url(img/website-background-mudassir-ali.jpg) ;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+.top_container{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    border-radius: var(--bord-rad);
+    background-color:var(--light);
+
+
+    /* Changed my mind on layout
+    display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+.top_container>img{
+    opacity: 80%;
+    height: 20rem;
+}
+
+.main_nav>nav>ul{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    background: var(--accent);
+    border-radius: var(--bord-rad) ;
+    padding: 20px;
+    margin-top: 0%;
+    /* box-shadow: inset 0px 5px 20px; */
+
+}
+li{
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.3rem;
+
+}
+
+.intro{
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 5px;
+}
+
+.main_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;   
+}
+.main_catagories{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--accent);
+    text-align: center;
+justify-items: center;
+
+}
+.main_catagories *{
+    background-color: var(--dark);
+    color: var(--light);
+}
+.catagory_links{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.link_a{
+    background-image: url(img/live-bait-vs-artifical-lures-1024x536.jpg);
+
+}
+
+
+
+
